@@ -1,0 +1,25 @@
+{
+  "name": "permanentinc/beautiful",
+  "description": "CMS Theme for silverstripe",
+  "homepage": "http://github.com/permanentinc/beautiful",
+  "keywords": [],
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "Jaydn de Graaf",
+      "email": "jd@pinc.nz"
+    }
+  ],
+  "support": {
+    "issues": "http://github.com/permanentinc/beautiful/issues"
+  },
+  "require": {
+    "silverstripe/cms": "^4",
+    "silverstripe/framework": "^4"
+  },
+  "extra": {
+    "screenshots": [
+      "img/screens/screenshot1.png"
+    ]
+  }
+}

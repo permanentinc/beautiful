@@ -1,0 +1,41 @@
+//------------------------------------------------------------------
+// Button styles
+//------------------------------------------------------------------
+
+.btn-primary {
+  transition: all 222ms ease !important;
+  background: $highlight;
+  border-color: $highlight;
+  color: $white !important;
+
+  &:focus {
+    box-shadow: 0 5px 15px rgba($black, .05), 0 4px 10px rgba($highlight, .25);
+  }
+
+  &:active,
+  &:hover {
+    background-color: darken($highlight, 3%);
+    border-color: darken($highlight, 3%);
+    box-shadow: 0 5px 15px rgba($black, .05), 0 4px 10px rgba($highlight, .25);
+  }
+
+  &.disabled {
+    opacity: 1;
+    background: $grey-mid-alt;
+    border-color: $grey-mid-alt;
+  }
+}
+
+.btn-outline-primary {
+  transition: all 222ms ease !important;
+  border-color: $highlight;
+  color: $highlight;
+
+  &:active,
+  &:hover {
+    background-color: lighten($highlight, 35%);
+    border-color: darken($highlight, 3%);
+    color: $highlight;
+    box-shadow: 0 5px 15px rgba($black, .05), 0 4px 10px rgba($highlight, .25);
+  }
+}

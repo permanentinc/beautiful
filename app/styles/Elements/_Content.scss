@@ -1,0 +1,115 @@
+//------------------------------------------------------------------
+// Main Content
+//------------------------------------------------------------------
+
+.campaign-info {
+  display: none;
+}
+
+.flexbox-area-grow.fill-height {
+  overflow: auto;
+
+  &::-webkit-scrollbar-track {
+    background-color: $grey-light;
+  }
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    background-color: $grey-light;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $grey-mid;
+    border-radius: 0;
+    border: 0;
+  }
+}
+
+.cms-content {
+  background: $off-cream;
+  height: 100%;
+  overflow: auto;
+
+}
+
+.toolbar--north,
+.cms-content-header {
+  background: $white;
+  box-shadow: 0 .125rem .625rem rgba($grey-dark, .12);
+  border: 0;
+  position: absolute;
+
+  + .panel--padded {
+    margin-top: 6rem;
+  }
+
+  + .flexbox-area-grow,
+  + .flexbox-area-grow.fill-height {
+    padding-top: 4rem;
+  }
+
+}
+
+.toolbar--south {
+  position: fixed;
+  bottom: 0;
+  box-shadow: 0 -.125rem .625rem rgba($grey-dark, .12);
+  background: $white;
+  border: 0;
+}
+
+.panel--padded .ui-tabs-nav {
+  border-color: $grey-light;
+}
+
+.editor {
+  border: 0 !important;
+  box-shadow: 0 .125rem 9.375rem rgba(90, 97, 105, .1), 0 .25rem .5rem rgba(90, 97, 105, .12), 0 .9375rem 1.375rem rgba(90, 97, 105, .1), 0 .4375rem 2.1875rem rgba(165, 182, 201, .1) !important;
+
+  fieldset {
+
+    &::-webkit-scrollbar-track {
+      background-color: $grey-light;
+    }
+
+    &::-webkit-scrollbar {
+      width: 5px;
+      background-color: $grey-light;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $grey-mid;
+      border-radius: 0;
+      border: 0;
+    }
+  }
+
+  .editor__details {
+    background: $white;
+  }
+}
+
+.cms-actions-buttons-row .btn {
+  font-size: .8rem;
+}
+
+.ui-tabs .cms-content-header-tabs .ui-tabs-nav .ui-state-active .nav-link,
+.ui-tabs .cms-content-header-tabs .ui-tabs-nav .ui-state-active .nav-link:hover,
+.ui-tabs .cms-content-header-tabs .ui-tabs-nav .ui-state-active a,
+.ui-tabs.cms-tabset-primary .ui-tabs-nav .ui-state-active .nav-link,
+.ui-tabs.cms-tabset-primary .ui-tabs-nav .ui-state-active .nav-link:hover,
+.ui-tabs.cms-tabset-primary .ui-tabs-nav .ui-state-active a,
+.ui-tabs .ui-tabs-nav.cms-tabset-nav-primary .ui-state-active .nav-link,
+.ui-tabs .ui-tabs-nav.cms-tabset-nav-primary .ui-state-active .nav-link:hover,
+.ui-tabs .ui-tabs-nav.cms-tabset-nav-primary .ui-state-active a {
+  border-color: $highlight;
+}
+
+.ss-toggle .ui-accordion-header.ui-state-default {
+  background: $white;
+}
+
+.ui-accordion .ui-accordion-content,
+.ui-accordion .ui-accordion-header {
+  border-color: $grey-mid;
+}

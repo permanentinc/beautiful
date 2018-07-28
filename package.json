@@ -1,0 +1,78 @@
+{
+  "name": "QuickSilver",
+  "version": "0.0.2",
+  "description": "Build package for a clean application",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/toastnz/quicksilver"
+  },
+  "scripts": {
+    "start": "gulp --silent"
+  },
+  "browser": {
+    "jquery": "./node_modules/jquery/dist/jquery.js"
+  },
+  "browserify-shim": {
+    "jquery": "$"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "alertify.js": "^1.0.12",
+    "aos": "2.2.0",
+    "chart.js": "^2.7.2",
+    "classie": "^1.0.0",
+    "combokeys": "^2.4.6",
+    "fancybox": "^3.0.0",
+    "google-maps": "^3.2.1",
+    "gulp-uglify": "^3.0.0",
+    "imagesloaded": "^4.1.3",
+    "in-view": "^0.6.1",
+    "jquery": "^3.2.1",
+    "jquery-bridget": "^2.0.1",
+    "jquery-match-height": "^0.7.2",
+    "list.js": "^1.5.0",
+    "lodash": "^4.17.4",
+    "masonry-layout": "^4.1.1",
+    "medium-zoom": "^0.1.5",
+    "moment": "^2.18.1",
+    "node-js-marker-clusterer": "^1.0.0",
+    "nprogress": "^0.2.0",
+    "parsleyjs": "^2.7.0",
+    "places.js": "^1.4.12",
+    "scrollreveal": "^3.3.6",
+    "select2": "^4.0.3",
+    "slick-carousel": "^1.6.0",
+    "tingle.js": "^0.10.0",
+    "vinyl-buffer": "^1.0.0",
+    "vivus": "^0.4.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.0",
+    "babelify": "^7.3.0",
+    "browserify": "^14.1.0",
+    "browserify-shim": "^3.8.14",
+    "chalk": "^1.1.3",
+    "fs": "0.0.1-security",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-pixrem": "^1.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-real-favicon": "^0.2.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-sass": "^3.1.0",
+    "gulp-sass-bulk-import": "^1.0.1",
+    "gulp-scss-lint": "^0.4.0",
+    "gulp-sourcemaps": "^2.5.0",
+    "gulp-util": "^3.0.8",
+    "gulp.spritesmith": "^6.4.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.9.0"
+  }
+}

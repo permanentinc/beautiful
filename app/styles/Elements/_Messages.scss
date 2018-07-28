@@ -1,0 +1,17 @@
+//------------------------------------------------------------------
+// Message
+//------------------------------------------------------------------
+
+.message.warning {
+  border-radius: .3rem;
+  border: 0;
+  background-color: $yellow-light;
+  color: $text;
+}
+
+.alert.alert-warning {
+  border-radius: .3rem;
+  border: 0;
+  background-color: $yellow-light;
+  color: $text;
+}

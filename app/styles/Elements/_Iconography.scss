@@ -1,0 +1,274 @@
+//------------------------------------------------------------------
+// Iconography
+//------------------------------------------------------------------
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/MaterialIcons-Regular.eot');
+  src: local('Material Icons'),
+  local('MaterialIcons-Regular'),
+  url('../fonts/MaterialIcons-Regular.woff2') format('woff2'),
+  url('../fonts/MaterialIcons-Regular.woff') format('woff'),
+  url('../fonts/MaterialIcons-Regular.ttf') format('truetype');
+}
+
+%material-icons,
+.material-icons {
+  font-family: 'Material Icons', sans-serif !important;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+}
+
+.jstree-pageicon {
+  background: none !important;
+  &:before {
+    @extend %material-icons;
+    font-size: 16px;
+    content: '\e14d';
+  }
+}
+
+.page-icon.class-HomePage {
+  &:before {
+    @extend %material-icons;
+    font-size: 16px;
+    content: '\e88a';
+  }
+}
+
+.page-icon.class-ContactPage {
+  &:before {
+    @extend %material-icons;
+    font-size: 16px;
+    content: '\e89b';
+  }
+}
+
+.page-icon.class-SilverStripe_ErrorPage_ErrorPage {
+  &:before {
+    @extend %material-icons;
+    font-size: 16px;
+    content: '\e001';
+  }
+}
+
+.cms-tree.jstree .jstree-open > ins, .tree-holder.jstree .jstree-open > ins {
+  background: none !important;
+
+  &:before {
+    @extend %material-icons;
+    font-size: 20px;
+    content: '\e313';
+    color: $highlight;
+    top: 3px;
+  }
+}
+
+.cms-tree.jstree .jstree-closed > ins, .tree-holder.jstree .jstree-closed > ins {
+  background: none !important;
+  border-radius: .2rem;
+
+  &:before {
+    @extend %material-icons;
+    font-size: 20px;
+    content: '\e315';
+    color: $highlight;
+    position: relative;
+    top: 2px;
+  }
+}
+
+#cms-menu {
+  font-size: 10px !important;
+
+  .menu__icon {
+    color: rgba($white, .7);
+    left: 20px;
+    margin-top: -1px;
+  }
+
+  .sidebarMenu__item__link__icon {
+    &:before {
+      @extend %material-icons;
+      content: '\e14d';
+    }
+  }
+
+  .font-icon-sitemap {
+    &:before {
+      @extend %material-icons;
+      content: '\e14d';
+    }
+  }
+
+  .font-icon-chat {
+    &:before {
+      @extend %material-icons;
+      content: '\e0b7';
+    }
+  }
+
+  .font-icon-image {
+    &:before {
+      @extend %material-icons;
+      content: '\e3d3';
+    }
+  }
+
+  .font-icon-chart-line {
+    &:before {
+      @extend %material-icons;
+      content: '\e6e1';
+    }
+  }
+
+  .font-icon-torsos-all {
+    &:before {
+      @extend %material-icons;
+      content: '\e7ef';
+    }
+  }
+
+  .font-icon-cog {
+    &:before {
+      @extend %material-icons;
+      content: '\e8b8';
+    }
+  }
+
+  .font-icon-help-circled {
+    &:before {
+      @extend %material-icons;
+      content: '\e887';
+    }
+  }
+
+  .font-icon-page-multiple {
+    &:before {
+      @extend %material-icons;
+      content: '\e85d';
+    }
+  }
+
+  .font-icon-database {
+    &:before {
+      @extend %material-icons;
+      content: '\e85d';
+    }
+  }
+
+  .font-icon-tags {
+    &:before {
+      @extend %material-icons;
+      content: '\e893';
+    }
+  }
+
+  .silvershop-icon-cart {
+    &:before {
+      @extend %material-icons;
+      content: '\e8cc';
+    }
+  }
+
+  .silvershop-icon-catalog {
+    &:before {
+      @extend %material-icons;
+      content: '\e0e0';
+    }
+  }
+
+}
+
+.font-icon-upload:before {
+  @extend %material-icons;
+  content: '\e2c3';
+}
+
+.font-icon-folder-add:before {
+  @extend %material-icons;
+  content: '\e2cc';
+}
+
+.font-icon-list:before {
+  @extend %material-icons;
+  content: '\e896';
+}
+
+.font-icon-trash:before {
+  @extend %material-icons;
+  content: '\e872' !important;
+}
+
+.font-icon-down-circled:before {
+  @extend %material-icons;
+  content: '\e2c4' !important;
+}
+
+.btn--icon-sm[class*=font-icon-]:before {
+  font-size: 24px;
+}
+
+.font-icon-plus-circled:before {
+  @extend %material-icons;
+  content: '\e148' !important;
+}
+
+#Menu-BookletAdmin .menu__icon:before {
+  @extend %material-icons;
+  content: '\e865' !important;
+}
+
+#Menu-SignupAdmin .menu__icon:before {
+  @extend %material-icons;
+  content: '\e5c9' !important;
+}
+
+#Menu-CompetitionAdmin .menu__icon:before {
+  @extend %material-icons;
+  content: '\e838' !important;
+}
+
+#Menu-SilverStripe-RedirectedURLs-Admin-RedirectedURLAdmin .menu__icon {
+  text-indent: 0;
+}
+
+#Menu-SilverStripe-RedirectedURLs-Admin-RedirectedURLAdmin .icon.icon-16 {
+  background: none;
+}
+
+#Menu-SilverStripe-RedirectedURLs-Admin-RedirectedURLAdmin .menu__icon:before {
+  @extend %material-icons;
+  content: '\e043' !important;
+  top: -10px !important;
+  position: relative !important;
+}
+
+#Menu-SilverStripe-CampaignAdmin-CampaignAdmin {
+  display: none;
+}
+
+#Menu-MessageAdmin .menu__icon:before {
+  @extend %material-icons;
+  content: '\e0e1' !important;
+}
+
+.cms-tree.jstree a, .cms-tree.jstree a:link, .tree-holder.jstree a, .tree-holder.jstree a:link {
+  color: $highlight;
+}
