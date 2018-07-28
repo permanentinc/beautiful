@@ -1,3 +1,6 @@
+---
+Name: permanentinc-beautiful
+---
 SilverStripe\Admin\LeftAndMain:
-  extra_requirements_css:
-    - beautiful/dist/styles/style.css
+  extensions:
+    - permanentinc\beautiful\Extensions\LeftAndMainExtension

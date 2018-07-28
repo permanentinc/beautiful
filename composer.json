@@ -18,6 +18,10 @@
     "silverstripe/framework": "^4"
   },
   "extra": {
+    "installer-name": "beautiful",
+    "expose": [
+      "dist"
+    ],
     "screenshots": [
       "img/screens/screenshot1.png"
     ]
