@@ -2,17 +2,46 @@
 // Left Menu
 //------------------------------------------------------------------
 
-#Menu-Help {
-  display: none !important;
+.toolbar.toolbar--south.cms-panel-toggle.vertical-align-items {
+  background: $white;
+  box-shadow: none;
+  border: 0;
 }
 
 .cms-menu {
+  @include shadow-dark;
   z-index: 111;
-  box-shadow: 0 .125rem 9.375rem rgba(90, 97, 105, .1), 0 .25rem .5rem rgba(90, 97, 105, .12), 0 .9375rem 1.375rem rgba(90, 97, 105, .1), 0 .4375rem 2.1875rem rgba(165, 182, 201, .1) !important;
+  background: $white;
+  border: 0;
 
   &.collapsed {
-    border-right: 1px solid $grey-light;
-    box-shadow: 0 .125rem 9.375rem rgba(90, 97, 105, .1), 0 .25rem .5rem rgba(90, 97, 105, .12), 0 .9375rem 1.375rem rgba(90, 97, 105, .1), 0 .4375rem 2.1875rem rgba(165, 182, 201, .1) !important;
+    @include shadow-darker;
+    border-right: 1px solid $grey-light !important;
+  }
+
+  .cms-panel-content {
+    box-shadow: none;
+  }
+
+}
+
+.cms-login-status,
+.cms-login-status a {
+  background: $highlight !important;
+}
+
+.cms-sitename {
+  background: $white !important;
+  border: 0;
+
+  &__title {
+    @include regular;
+    font-size: 1.2rem;
+    color: $highlight !important;
+  }
+
+  .font-icon-silverstripe:before {
+    color: $highlight;
   }
 }
 
@@ -24,15 +53,12 @@
     width: 180px;
     position: relative;
     overflow: hidden;
-    border-bottom: 1px solid $grey-light;
 
     a {
       background: $white;
-      position: relative;
-      list-style: none;
       color: $text;
+      position: relative;
       box-shadow: none;
-      //transition: all 000ms ease !important;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
@@ -40,26 +66,7 @@
       padding-left: 0;
       padding-top: 0;
       padding-bottom: 0;
-      min-height: 50px;
-      font-size: 14px;
       transition: all 222ms ease;
-
-      .menu__icon {
-        padding: 1rem .5rem 1rem 0;
-        line-height: 1;
-        left: 18px !important;
-
-        &:before {
-          color: $grey-mid;
-          transition: all 222ms ease;
-        }
-      }
-
-      .text {
-        padding: .5rem .5rem .5rem 1.5rem;
-        line-height: 1;
-        font-size: .9rem;
-      }
 
       &:before {
         @include pseudo;
@@ -69,9 +76,28 @@
         bottom: 0;
         position: absolute;
         background: $white;
-        transition: all 333ms ease;
+        transition: all 222ms ease;
         transform: translateX(-100%);
       }
+
+      .menu__icon {
+        padding: 1rem .5rem 1rem 0;
+        line-height: 1;
+        left: 18px;
+
+        &:before {
+          color: $grey-mid;
+          transition: all 333ms ease;
+        }
+      }
+
+      .text {
+        @include regular;
+        padding: .5rem .5rem .5rem 2rem;
+        line-height: 1;
+        font-size: 1rem;
+      }
+
     }
 
     a:focus {
@@ -86,7 +112,6 @@
         left: 0;
         bottom: 0;
         position: absolute;
-
       }
 
       .menu__icon:before {
@@ -94,219 +119,29 @@
       }
     }
 
-    &:hover,
-    &.current {
-      a {
-        background: $off-white;
-        color: $highlight;
-
-        &:before {
-          @include pseudo;
-          width: 4px;
-          background: $highlight;
-          top: 0;
-          left: 0;
-          bottom: 0;
-          position: absolute;
-          transform: translateX(0);
-        }
-
-        .menu__icon:before {
-          color: $highlight;
-        }
-      }
-    }
-  }
-
-}
-
-.sidebarMenu {
-  padding: 0;
-  background: #252525;
-
-  &__item {
-    color: $white;
-    position: relative;
-    list-style: none;
-
-    &:before {
-      width: 4px;
-      background: $white;
-    }
-
-    &:hover,
-    &.current {
-      background: #49494b;
+    &:hover a,
+    &.current a,
+    a:focus {
+      background: $off-white;
+      color: $highlight;
 
       &:before {
         @include pseudo;
         width: 4px;
-        background: $off-white;
+        background: $highlight;
         top: 0;
         left: 0;
         bottom: 0;
         position: absolute;
-
-      }
-    }
-
-    &__link {
-      color: $text;
-      font-size: 13px;
-      box-shadow: none;
-      transition: all 000ms ease !important;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      padding-left: 1rem;
-      width: 180px;
-
-      $self: &;
-
-      &:hover {
-
-        #{$self}__icon {
-          color: rgba($text, 1);
-        }
-
-        #{$self}__text {
-          color: rgba($text, 1);
-          transition: all 333ms ease;
-        }
+        transform: translateX(0);
       }
 
-      &__icon {
-        padding: 1rem .5rem;
-        line-height: 1;
-      }
-
-      &__text {
-        padding: .5rem;
-        line-height: 1;
+      .menu__icon:before {
+        color: $highlight;
       }
     }
   }
 }
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700');
 
-* {
-  font-family: 'Montserrat', sans-serif !important;
-}
 
-.cms-menu__header {
-  background: $off-white;
-  margin-bottom: -1px;
-}
-
-.sideBarLogo__link {
-  padding: 13px 0 10px;
-  display: block;
-  text-align: center;
-}
-
-.cms-login-status .cms-login-status__logout-link:focus,
-.cms-login-status .cms-login-status__logout-link:hover,
-.cms-login-status .cms-login-status__profile-link:focus,
-.cms-login-status .cms-login-status__profile-link:hover {
-  background: rgba(#252525, 0) !important;
-}
-
-.sideBarLogo {
-  background: $white;
-  height: 52px;
-
-  path {
-    fill: $highlight;
-  }
-}
-
-.cms-login-status {
-  background: rgba($highlight, 1);
-}
-
-.toolbar.toolbar--south.cms-panel-toggle.vertical-align-items,
-.cms-menu {
-  background: $white;
-  border: 0;
-  box-shadow: none;
-}
-
-.cms-menu .cms-panel-content {
-  box-shadow: none;
-}
-
-.collapsed {
-  .sidebarMenu__item__link__text {
-    transform: translateX(8px);
-  }
-
-  .uncollapsedLogo {
-    display: none;
-
-  }
-
-  .collapsedLogo {
-    display: block;
-
-  }
-}
-
-.collapsedLogo {
-  display: none;
-  margin-bottom: 2px;
-
-}
-
-.uncollapsedLogo {
-  svg {
-    left: -8px;
-    position: relative;
-    top: -4px;
-  }
-
-}
-
-.form-check {
-
-  &-input {
-    -webkit-appearance: none;
-    width: 14px;
-    height: 14px;
-    border-radius: 1.5rem;
-    border: 1px solid $grey-light;
-    transition: all 250ms cubic-bezier(.27, .01, .38, 1.06);
-    box-shadow: none;
-    outline: 0;
-
-    &:before {
-      @include pseudo;
-      width: 6px;
-      height: 6px;
-      left: 3px;
-      top: 3px;
-      display: block;
-      padding: 0;
-      background: $white;
-      border-radius: 12rem;
-      transition: all 444ms ease;
-      transform: scale(0);
-      opacity: 0;
-    }
-
-    &:checked {
-      background: $highlight;
-      border-color: $highlight;
-
-      &:before {
-        background: $white;
-        transform: scale(1);
-        opacity: 1;
-      }
-    }
-  }
-}
-
-.uploadfield__dropzone {
-  border: 2 zpx dashed $grey-light !important;
-}

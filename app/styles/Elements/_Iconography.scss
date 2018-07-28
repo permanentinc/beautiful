@@ -35,8 +35,10 @@
   font-feature-settings: 'liga';
 }
 
+.cms-add-form .page-icon,
 .jstree-pageicon {
   background: none !important;
+
   &:before {
     @extend %material-icons;
     font-size: 16px;

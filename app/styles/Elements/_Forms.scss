@@ -54,7 +54,7 @@ form {
 
     &-description {
       background: $grey-light;
-      padding: .8rem;
+      padding: .3rem .8rem .5rem;
       color: $text;
       border-radius: .3rem;
 
@@ -131,6 +131,8 @@ form {
 
 }
 
+#Password_ConfirmPassword_Holder,
+#Password_Password_Holder,
 #Form_EditForm_GoogleTagManagerID_Holder,
 #Form_EditForm_GoogleTrackingID_Holder,
 #Form_EditForm_MailChimpListID_Holder,
@@ -150,6 +152,8 @@ form {
   width: calc(50% + 1.5385rem);
 }
 
+#Form_ItemEditForm_FirstName_Holder,
+#Password_Password_Holder,
 #Form_EditForm_GoogleTrackingID_Holder,
 #Form_EditForm_MailChimpAPI_Holder,
 #Form_EditForm_PinterestPage_Holder,

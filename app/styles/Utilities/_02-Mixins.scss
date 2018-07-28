@@ -1,4 +1,28 @@
 //------------------------------------------------------------------
+//                           Repeats
+//------------------------------------------------------------------
+
+@mixin shadow {
+  box-shadow: 0 2px 0 rgba(90, 97, 105, .11), 0 4px 8px rgba(90, 97, 105, .12), 0 10px 10px rgba(90, 97, 105, .06), 0 7px 70px rgba(90, 97, 105, .1);
+}
+
+@mixin shadow-south {
+  box-shadow: 0 -0.125rem 0.625rem rgba(90,97,104,0.12);
+}
+
+@mixin shadow-north {
+  box-shadow: 0 .125rem .625rem rgba($grey-dark, .12);
+}
+
+@mixin shadow-dark {
+  box-shadow: 0 2px 0 rgba(90, 97, 105, .11), 0 4px 8px rgba(90, 97, 105, .12), 0 10px 10px rgba(90, 97, 105, .06), 0 7px 70px rgba(90, 97, 105, .1);
+}
+
+@mixin shadow-darker {
+  box-shadow: 0 2px 0 rgba(90, 97, 105, .11), 0 4px 8px rgba(90, 97, 105, .12), 0 10px 10px rgba(90, 97, 105, .06), 0 7px 70px rgba(90, 97, 105, .1);
+}
+
+//------------------------------------------------------------------
 //                          Break Points
 //------------------------------------------------------------------
 
@@ -139,8 +163,6 @@ $transition-deceleration: cubic-bezier(0, 0, .2, 1);
   content: '';
   display: block;
 }
-
-
 
 //------------------------------------------------------------------
 // Dynamic Aspect Ratios

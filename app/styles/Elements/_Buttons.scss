@@ -2,6 +2,10 @@
 // Button styles
 //------------------------------------------------------------------
 
+.btn {
+  font-size: .9rem;
+}
+
 .btn-primary {
   transition: all 222ms ease !important;
   background: $highlight;

@@ -1,32 +1,32 @@
 //------------------------------------------------------------------
 // Icon Field
 //------------------------------------------------------------------
-
-body {
-  ul.field.IconField {
-    @include clearfix;
-    background: $grey-mid;
-    border: 0 !important;
-    border-radius: .3rem;
-  }
-
-  .field.IconField .option input:checked + label {
-    background: darken($grey-mid, 6%);
-    border: 1px solid $white;
-    border-radius: .3rem;
-  }
-
-  .field.IconField .option label {
-    border-radius: .3rem;
-
-  }
-
-  .field.IconField .option {
-    margin-bottom: -5px;
-    float: left;
-  }
-
-  .field.IconField .option:first-child label:after {
-    color: $white;
-  }
-}
+//
+//body {
+//  ul.field.IconField {
+//    @include clearfix;
+//    background: $grey-mid;
+//    border: 0 !important;
+//    border-radius: .3rem;
+//  }
+//
+//  .field.IconField .option input:checked + label {
+//    background: darken($grey-mid, 6%);
+//    border: 1px solid $white;
+//    border-radius: .3rem;
+//  }
+//
+//  .field.IconField .option label {
+//    border-radius: .3rem;
+//
+//  }
+//
+//  .field.IconField .option {
+//    margin-bottom: -5px;
+//    float: left;
+//  }
+//
+//  .field.IconField .option:first-child label:after {
+//    color: $white;
+//  }
+//}
