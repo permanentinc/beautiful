@@ -11,6 +11,7 @@
       box-shadow: none;
       border: 1px solid $grey-light;
       transition: all 222ms ease;
+      z-index: 3;
 
       .search-choice {
         background: $highlight;
@@ -102,10 +103,16 @@
         .active-result {
           font-size: 1rem;
 
+          &.result-selected,
           &.highlighted {
             background: $highlight !important;
             color: $white !important;
             border-radius: .2rem;
+
+            &:before {
+              color: $white;
+              background: transparent !important;
+            }
           }
         }
       }

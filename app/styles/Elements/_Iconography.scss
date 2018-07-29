@@ -293,3 +293,13 @@
 .cms-tree.jstree a, .cms-tree.jstree a:link, .tree-holder.jstree a, .tree-holder.jstree a:link {
   color: $highlight;
 }
+
+.jstree-no-checkboxes {
+  > li {
+    > ins {
+      &:after {
+        margin-left: -4px !important;
+      }
+    }
+  }
+}

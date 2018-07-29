@@ -1,0 +1,42 @@
+//------------------------------------------------------------------
+// Oh Gawd
+//------------------------------------------------------------------
+
+.cms {
+
+  .is-open,
+  .is-focused,
+  .is-focusable {
+    .Select-control {
+      border-color: $highlight !important;
+    }
+  }
+
+  .Select-menu-outer {
+    border-color: $highlight !important;
+    overflow: hidden;
+
+    > div {
+      &::-webkit-scrollbar-track {
+        background-color: $grey-light;
+      }
+
+      &::-webkit-scrollbar {
+        width: 5px;
+        background-color: $grey-light;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: $grey-mid;
+        border-radius: 0;
+        border: 0;
+      }
+
+      > * {
+        border: 3px solid red !important;
+      }
+    }
+
+  }
+}
+

@@ -1,0 +1,10 @@
+.cms .cms-container {
+  .ss-ui-action-tabset {
+    .ui-tabs-panel {
+      border: 1px solid $highlight !important;
+      box-shadow: 0 .313rem .719rem rgba($text, .1), 0 .156rem .125rem rgba($black, .06);
+      background: $white !important;
+      border-radius: .2rem !important;
+    }
+  }
+}

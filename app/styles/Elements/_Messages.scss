@@ -9,6 +9,14 @@
   color: $text;
 }
 
+.message.notice {
+  border-radius: .3rem;
+  border: 0;
+  background-color: $green-light;
+  color: $text;
+}
+
+
 .alert.alert-warning {
   border-radius: .3rem;
   border: 0;

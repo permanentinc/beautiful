@@ -68,3 +68,14 @@
     }
   }
 }
+
+.btn__loading-icon {
+  .btn__circle {
+    background: $highlight !important;
+  }
+}
+
+.cms-batch-actions .btn {
+  padding-top: 9px;
+  padding-bottom: 8px;
+}

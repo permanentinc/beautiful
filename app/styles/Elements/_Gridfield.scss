@@ -12,5 +12,19 @@
     .add-existing-autocompleter input.relation-search {
       width: 290px;
     }
+
+    &__sort {
+      &.ss-gridfield-sorted-asc,
+      &.ss-gridfield-sorted-desc {
+        border-color: $highlight;
+
+        &:after {
+          color: $highlight;
+        }
+      }
+
+    }
   }
+
 }
+

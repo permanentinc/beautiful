@@ -13,7 +13,10 @@
   background: $white;
   right: 0;
   left: 0;
-  bottom: 1rem;
+  right: auto;
+  left: auto;
+  max-width: 29rem;
+  bottom: 1.5rem;
   margin: 0 auto;
   border-radius: .3rem;
   border: 1px solid $highlight;
