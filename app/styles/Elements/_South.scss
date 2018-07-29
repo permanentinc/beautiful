@@ -1,0 +1,52 @@
+
+.cms-content-actions {
+  @include shadow;
+  @include shadow-darker;
+  box-shadow: 0 5px 15px rgba($black, .05), 0 4px 10px rgba($highlight, .25);
+  backface-visibility: hidden;
+  position: sticky;
+  background: $white;
+  right: 0;
+  left: 0;
+  bottom: 1rem;
+  margin: 0 auto;
+  border-radius: .3rem;
+  border: 1px solid $highlight;
+  width: auto;
+  z-index: 9;
+  //left: 241px;
+  //left: 180px;
+
+}
+
+.toolbar--south:empty {
+  display: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+
+//
+//.cms-content-tools.collapsed ~ .fill-height.flexbox-area-grow {
+//  .cms-content-actions {
+//    left: 241px;
+//  }
+//}
+//
+//.cms-menu.collapsed ~ .fill-height.flexbox-area-grow {
+//  .cms-content-actions {
+//    left: 121px;
+//  }
+//}
+//
+//.cms-content-tools:not(.collapsed) ~ .fill-height.flexbox-area-grow {
+//  .cms-content-actions {
+//    left: 360px;
+//  }
+//}
+//
+//.cms-menu:not(.collapsed) ~ .fill-height.flexbox-area-grow .cms-content-tools:not(.collapsed) ~ .fill-height.flexbox-area-grow {
+//  .cms-content-actions {
+//    left: 481px;
+//  }
+//}

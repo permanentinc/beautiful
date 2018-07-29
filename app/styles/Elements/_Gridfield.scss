@@ -1,0 +1,11 @@
+.cms {
+  .grid-field__table {
+    tr {
+      th {
+        &.extra {
+          background: $text;
+        }
+      }
+    }
+  }
+}

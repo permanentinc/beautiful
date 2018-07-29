@@ -2,145 +2,223 @@
 // Left Menu
 //------------------------------------------------------------------
 
-.toolbar.toolbar--south.cms-panel-toggle.vertical-align-items {
-  background: $white;
-  box-shadow: none;
-  border: 0;
-}
-
-.cms-menu {
-  @include shadow-dark;
-  z-index: 111;
-  background: $white;
-  border: 0;
-
-  &.collapsed {
-    @include shadow-darker;
-    border-right: 1px solid $grey-light !important;
-  }
-
-  .cms-panel-content {
+.cms .cms-container {
+  .toolbar.toolbar--south.cms-panel-toggle.vertical-align-items {
+    background: $white;
     box-shadow: none;
+    border: 0;
   }
 
-}
+  .cms-menu {
+    @include shadow-dark;
+    z-index: 111;
+    background: $white;
+    border: 0;
 
-.cms-login-status,
-.cms-login-status a {
-  background: $highlight !important;
-}
+    &.collapsed {
+      @include shadow-darker;
+      border-right: 1px solid $grey-light !important;
+    }
 
-.cms-sitename {
-  background: $white !important;
-  border: 0;
-
-  &__title {
-    @include regular;
-    font-size: 1.2rem;
-    color: $highlight !important;
-  }
-
-  .font-icon-silverstripe:before {
-    color: $highlight;
-  }
-}
-
-.cms-menu__list {
-  padding: 0;
-  background: $white;
-
-  li {
-    width: 180px;
-    position: relative;
-    overflow: hidden;
-
-    a {
-      background: $white;
-      color: $text;
-      position: relative;
+    .cms-panel-content {
       box-shadow: none;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
+    }
+
+  }
+
+  .cms-login-status,
+  .cms-login-status a {
+    background: $highlight !important;
+  }
+
+  .cms-sitename {
+    background: $white !important;
+    border: 0;
+
+    &__title {
+      @include regular;
+      font-size: 1.2rem;
+      color: $highlight !important;
+    }
+
+    .font-icon-silverstripe:before {
+      color: $highlight;
+    }
+  }
+
+  .cms-menu__list {
+    padding: 0;
+    background: $white;
+
+    li {
       width: 180px;
-      padding-left: 0;
-      padding-top: 0;
-      padding-bottom: 0;
-      transition: all 222ms ease;
+      position: relative;
+      overflow: hidden;
 
-      &:before {
-        @include pseudo;
-        width: 4px;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        position: absolute;
+      a {
         background: $white;
+        color: $text;
+        position: relative;
+        box-shadow: none;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 180px;
+        padding-left: 0;
+        padding-top: 0;
+        padding-bottom: 0;
         transition: all 222ms ease;
-        transform: translateX(-100%);
-      }
-
-      .menu__icon {
-        padding: 1rem .5rem 1rem 0;
-        line-height: 1;
-        left: 18px;
 
         &:before {
-          color: $grey-mid;
-          transition: all 333ms ease;
+          @include pseudo;
+          width: 4px;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          position: absolute;
+          background: $white;
+          transition: all 222ms ease;
+          transform: translateX(-100%);
+        }
+
+        .menu__icon {
+          padding: 1rem .5rem 1rem 0;
+          line-height: 1;
+          left: 18px;
+
+          &:before {
+            color: $grey-mid;
+            transition: all 333ms ease;
+          }
+        }
+
+        .text {
+          @include regular;
+          padding: .5rem .5rem .5rem 2rem;
+          line-height: 1;
+          font-size: 1rem;
+        }
+
+      }
+
+      a:focus {
+        background: $off-white;
+        color: $white;
+
+        &:before {
+          @include pseudo;
+          width: 4px;
+          background: $off-white;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          position: absolute;
+        }
+
+        .menu__icon:before {
+          color: $text;
         }
       }
 
-      .text {
-        @include regular;
-        padding: .5rem .5rem .5rem 2rem;
-        line-height: 1;
-        font-size: 1rem;
-      }
-
-    }
-
-    a:focus {
-      background: $off-white;
-      color: $white;
-
-      &:before {
-        @include pseudo;
-        width: 4px;
+      &:hover a,
+      &.current a,
+      a:focus {
         background: $off-white;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        position: absolute;
-      }
-
-      .menu__icon:before {
-        color: $text;
-      }
-    }
-
-    &:hover a,
-    &.current a,
-    a:focus {
-      background: $off-white;
-      color: $highlight;
-
-      &:before {
-        @include pseudo;
-        width: 4px;
-        background: $highlight;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        position: absolute;
-        transform: translateX(0);
-      }
-
-      .menu__icon:before {
         color: $highlight;
+
+        &:before {
+          @include pseudo;
+          width: 4px;
+          background: $highlight;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          position: absolute;
+          transform: translateX(0);
+        }
+
+        .menu__icon:before {
+          color: $highlight;
+        }
       }
     }
   }
+
+  .toggle-expand,
+  .toggle-collapse {
+    span {
+      width: 2rem;
+      font-size: 0;
+      position: relative;
+
+      &:hover {
+        &:after,
+        &:before {
+          color: $highlight;
+        }
+      }
+
+      &:before {
+        @extend %material-icons;
+        font-size: 24px;
+        content: '\e314';
+        position: absolute;
+        transform: translateX(3px);
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+
+      &:after {
+        @extend %material-icons;
+        font-size: 24px;
+        content: '\e314';
+        position: absolute;
+        transform: translateX(-3px);
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .toggle-expand {
+    span {
+
+      &:before {
+        content: '\e315';
+      }
+
+      &:after {
+        content: '\e315';
+      }
+    }
+  }
+
+  .sticky-toggle {
+    position: absolute;
+    text-indent: 0;
+    font-size: 0;
+    height: 1.5rem;
+    width: 2rem;
+    background: none;
+    left: 0 !important;
+    transform: translateX(4px);
+
+    &:before {
+      @extend %material-icons;
+      font-size: 24px;
+      content: '\e8d4';
+      position: absolute;
+      color: $text;
+      right: 0;
+      left: 0;
+      top: 0;
+      margin: 0 auto;
+    }
+
+  }
+
 }
 
 

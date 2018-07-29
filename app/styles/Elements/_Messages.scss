@@ -29,3 +29,9 @@
     top: .3rem;
   }
 }
+
+.alert.required {
+  background: $grey-light;
+  color: $text;
+  border: 1px solid $white;
+}

@@ -2,44 +2,63 @@
 // Button styles
 //------------------------------------------------------------------
 
-.btn {
-  font-size: .9rem;
-}
-
-.btn-primary {
-  transition: all 222ms ease !important;
-  background: $highlight;
-  border-color: $highlight;
-  color: $white !important;
-
-  &:focus {
-    box-shadow: 0 5px 15px rgba($black, .05), 0 4px 10px rgba($highlight, .25);
+.cms {
+  .btn {
+    font-size: .9rem;
   }
 
-  &:active,
-  &:hover {
-    background-color: darken($highlight, 3%);
-    border-color: darken($highlight, 3%);
-    box-shadow: 0 5px 15px rgba($black, .05), 0 4px 10px rgba($highlight, .25);
+  .btn-group .btn-primary {
+    border-color: $highlight;
   }
 
-  &.disabled {
-    opacity: 1;
-    background: $grey-mid-alt;
-    border-color: $grey-mid-alt;
+  .btn-primary {
+    transition: all 222ms ease !important;
+    background: $highlight;
+    border-color: $highlight;
+    color: $white !important;
+
+    &:focus {
+      box-shadow: 0 5px 15px rgba($black, .05), 0 4px 10px rgba($highlight, .25);
+    }
+
+    &:active,
+    &:hover {
+      background-color: darken($highlight, 3%);
+      border-color: darken($highlight, 3%);
+      box-shadow: 0 5px 15px rgba($black, .05), 0 4px 10px rgba($highlight, .25);
+    }
+
+    &:active:focus {
+      background-color: darken($highlight, 3%) !important;
+      box-shadow: 0 0 0 0.2rem rgba($highlight, .5) !important;
+      color: $white !important;
+    }
+
+    &.disabled {
+      opacity: 1;
+      background: $grey-mid-alt;
+      border-color: $grey-mid-alt;
+    }
   }
-}
 
-.btn-outline-primary {
-  transition: all 222ms ease !important;
-  border-color: $highlight;
-  color: $highlight;
-
-  &:active,
-  &:hover {
-    background-color: lighten($highlight, 35%);
-    border-color: darken($highlight, 3%);
+  .btn-outline-primary {
+    transition: all 222ms ease !important;
+    border-color: $highlight;
     color: $highlight;
-    box-shadow: 0 5px 15px rgba($black, .05), 0 4px 10px rgba($highlight, .25);
+
+    &:focus {
+      box-shadow: 0 5px 15px rgba($black, .05), 0 4px 10px rgba($highlight, .25);
+      background-color: lighten($highlight, 35%) !important;
+      border-color: darken($highlight, 3%) !important;
+      color: $highlight !important;
+    }
+
+    &:active,
+    &:hover {
+      background-color: lighten($highlight, 35%) !important;
+      border-color: darken($highlight, 3%) !important;
+      color: $highlight !important;
+      box-shadow: 0 5px 15px rgba($black, .05), 0 4px 10px rgba($highlight, .25) !important;
+    }
   }
 }
