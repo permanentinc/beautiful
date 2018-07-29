@@ -24,15 +24,25 @@
   padding: 0 2rem !important;
 }
 
-.cms-panel-padded {
+.ui-widget-content.cms-panel-padded {
   @extend %panel;
   padding: 2rem 0 !important;
 }
 
-.panel--padded:not(.cms-tree-view-sidebar) {
+div:not(.cms-content-fields) .panel--padded:not(.cms-tree-view-sidebar) {
   @extend %panel;
 }
 
 .cms .cms-content {
   background: $off-white !important;
+}
+
+.toolbar--content {
+  margin: 0;
+  padding: 0;
+}
+
+.cms .cms-panel-padded .cms-content-view {
+  padding-top: 0;
+  height: 100%;
 }
