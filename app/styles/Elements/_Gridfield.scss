@@ -1,11 +1,16 @@
 .cms {
-  .grid-field__table {
-    tr {
-      th {
-        &.extra {
-          background: $text;
+  .grid-field {
+    &__table {
+      tr {
+        th {
+          &.extra {
+            background: $text;
+          }
         }
       }
+    }
+    .add-existing-autocompleter input.relation-search {
+      width: 290px;
     }
   }
 }

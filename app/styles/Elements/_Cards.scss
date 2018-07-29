@@ -10,7 +10,7 @@
   border-radius: .625rem;
   margin: 4rem auto 7rem;
   background: $white !important;
-  padding: 2rem !important;
+  padding: 2rem 4rem !important;
   flex-grow: auto;
 
   .form {
@@ -24,105 +24,15 @@
   padding: 0 2rem !important;
 }
 
+.cms-panel-padded {
+  @extend %panel;
+  padding: 2rem 0 !important;
+}
+
 .panel--padded:not(.cms-tree-view-sidebar) {
   @extend %panel;
 }
 
 .cms .cms-content {
   background: $off-white !important;
-}
-
-//------------------------------------------------------------------
-// deprectaed
-//------------------------------------------------------------------
-
-.deprectaed {
-  .cms-content-filters {
-    @include shadow;
-    width: calc(100% - 11rem) !important;
-    border-radius: .625rem;
-    margin: 2rem auto -2rem;
-    background: $white !important;
-    padding: 2rem !important;
-    border-bottom: 0;
-
-    .btn-toolbar {
-      margin-top: 2rem;
-    }
-  }
-
-  .add-existing-autocompleter {
-    margin-top: 10px;
-
-    .action_gridfield_relationsearch {
-      padding-bottom: 11px;
-    }
-  }
-
-  .panel.flexbox-area-grow {
-    flex: none;
-    width: 100%;
-  }
-
-  .cms-edit-form.cms-panel-padded,
-  .panel--padded:not(.cms-tree-view-sidebar) {
-    width: calc(100% - 8rem) !important;
-    max-width: 80rem;
-    overflow: visible !important;
-    box-shadow: 0 2px 0 rgba(90, 97, 105, .11), 0 4px 8px rgba(90, 97, 105, .12), 0 10px 10px rgba(90, 97, 105, .06), 0 7px 70px rgba(90, 97, 105, .1);
-    border-radius: .625rem;
-    margin: 4rem auto 10rem;
-    background: $white !important;
-    padding: 2rem !important;
-
-    &:last-of-type {
-      margin-bottom: 10rem !important;
-    }
-
-    .btn__title {
-      font-weight: 400;
-      font-size: 14px;
-    }
-
-    .grid-field__sort.ss-gridfield-sorted-asc,
-    .grid-field__sort.ss-gridfield-sorted-desc,
-    .grid-field .grid-field__sort:focus {
-      border-bottom: 1px solid $highlight !important;
-    }
-
-    .action {
-      color: $highlight;
-
-      &:after {
-        color: $highlight;
-      }
-    }
-  }
-
-  .table tbody tr.even:hover,
-  .table tbody tr:hover {
-    background: $off-white;
-  }
-
-  .sortable-header {
-    border-bottom: 1px solid $grey-light;
-  }
-
-  .nav-tabs .nav-link.active,
-  .nav-tabs .nav-link.active:active,
-  .nav-tabs .nav-link.active:focus,
-  .nav-tabs .nav-link.active:hover {
-    border-bottom-color: $highlight;
-  }
-
-  #Form_AddForm_PageType {
-    padding-left: 2rem;
-
-    .form-check-input {
-      &:before {
-        display: none;
-      }
-    }
-
-  }
 }

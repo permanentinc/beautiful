@@ -1,0 +1,116 @@
+//------------------------------------------------------------------
+// Chosen
+//------------------------------------------------------------------
+
+.cms .cms-container {
+  .chosen-container {
+    .chosen-choices,
+    .chosen-single {
+      @include regular;
+      background: $white;
+      box-shadow: none;
+      border: 1px solid $grey-light;
+      transition: all 222ms ease;
+
+      .search-choice {
+        background: $highlight;
+        color: $white;
+        border: 0;
+        box-shadow: none;
+
+        .search-choice-close {
+          color: $white;
+          filter: brightness(300%) !important;
+        }
+      }
+
+      &:hover {
+        border-color: $grey-mid;
+      }
+
+      div b {
+        background-image: none !important;
+
+        &:after {
+          @include pseudo;
+          @extend %material-icons;
+          content: '\e313';
+          top: .3rem;
+          transition: all 333ms ease;
+        }
+      }
+    }
+
+    &.chosen-container-active {
+      .chosen-choices,
+      .chosen-single {
+        border-color: $highlight;
+        box-shadow: 0 .313rem .719rem rgba($text, .1), 0 .156rem .125rem rgba($black, .06);
+      }
+    }
+
+    &.chosen-with-drop {
+      .chosen-single {
+        div b:after {
+          transform: rotate(-180deg);
+        }
+      }
+    }
+
+    .chosen-drop {
+      border-color: $highlight;
+      margin-top: -2px;
+
+      .chosen-search {
+        padding: 0 .8rem !important;
+
+        .chosen-search-input {
+          @include regular;
+          border: 1px solid $grey-light;
+          color: $text;
+          border-radius: .2rem;
+          padding: .5rem 1rem;
+
+          &:hover {
+            border-color: $grey-mid;
+          }
+
+          &:focus {
+            border-color: $highlight;
+            box-shadow: 0 .313rem .719rem rgba($text, .1), 0 .156rem .125rem rgba($black, .06);
+          }
+        }
+      }
+
+      .chosen-results {
+        &::-webkit-scrollbar-track {
+          background-color: $grey-light;
+        }
+
+        &::-webkit-scrollbar {
+          width: 5px;
+          background-color: $grey-light;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background-color: $grey-mid;
+          border-radius: 0;
+          border: 0;
+        }
+
+        .active-result {
+          font-size: 1rem;
+          &.highlighted {
+            background: $highlight !important;
+            color: $white !important;
+            border-radius: .2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.chosen-container-multi .chosen-results {
+  padding :.4rem;
+}

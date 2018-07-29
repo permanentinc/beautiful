@@ -7,6 +7,12 @@
     font-size: .9rem;
   }
 
+  .actions-warning {
+    background: $yellow-light;
+    color: $text;
+    padding-top: .45rem;
+  }
+
   .btn-group .btn-primary {
     border-color: $highlight;
   }
