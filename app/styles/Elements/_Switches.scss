@@ -1,0 +1,14 @@
+//------------------------------------------------------------------
+// Switches
+//------------------------------------------------------------------
+
+.cms .cms-container {
+  .switch {
+    box-shadow: none;
+
+    a.active {
+      background: $highlight;
+      box-shadow: none;
+    }
+  }
+}

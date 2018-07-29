@@ -83,6 +83,7 @@
       }
 
       .chosen-results {
+        padding: .4rem;
         &::-webkit-scrollbar-track {
           background-color: $grey-light;
         }
@@ -100,6 +101,7 @@
 
         .active-result {
           font-size: 1rem;
+
           &.highlighted {
             background: $highlight !important;
             color: $white !important;
@@ -111,6 +113,18 @@
   }
 }
 
+.toolbar--south {
+  .chosen-single {
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .chosen-drop {
+    border-radius: .2rem !important;
+    box-shadow: 0 .313rem .719rem rgba($text, .1), 0 .156rem .125rem rgba($black, .06) !important;
+  }
+}
+
 .chosen-container-multi .chosen-results {
-  padding :.4rem;
+  padding: .4rem;
 }

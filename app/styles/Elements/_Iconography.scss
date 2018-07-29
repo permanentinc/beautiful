@@ -39,7 +39,7 @@
 .jstree-pageicon {
   background: none !important;
 
-  &:before {
+  &:after {
     @extend %material-icons;
     font-size: 16px;
     content: '\e14d';
@@ -47,7 +47,7 @@
 }
 
 .page-icon.class-HomePage {
-  &:before {
+  &:after {
     @extend %material-icons;
     font-size: 16px;
     content: '\e88a';
@@ -55,25 +55,44 @@
 }
 
 .page-icon.class-ContactPage {
-  &:before {
+  &:after {
     @extend %material-icons;
     font-size: 16px;
     content: '\e89b';
   }
 }
 
+.class-SilverStripe_ErrorPage_ErrorPage > a .jstree-pageicon,
 .page-icon.class-SilverStripe_ErrorPage_ErrorPage {
-  &:before {
+  &:after {
     @extend %material-icons;
     font-size: 16px;
     content: '\e001';
   }
 }
 
+.class-SilverStripe_CMS_Model_RedirectorPage > a .jstree-pageicon,
+.page-icon.class-SilverStripe_CMS_Model_RedirectorPage {
+  &:after {
+    @extend %material-icons;
+    font-size: 16px;
+    content: '\e8d4';
+  }
+}
+
+.class-SilverStripe_CMS_Model_VirtualPage > a .jstree-pageicon,
+.page-icon.class-SilverStripe_CMS_Model_VirtualPage {
+  &:after {
+    @extend %material-icons;
+    font-size: 16px;
+    content: '\e2c2';
+  }
+}
+
 .cms-tree.jstree .jstree-open > ins, .tree-holder.jstree .jstree-open > ins {
   background: none !important;
 
-  &:before {
+  &:after {
     @extend %material-icons;
     font-size: 20px;
     content: '\e313';
@@ -86,7 +105,7 @@
   background: none !important;
   border-radius: .2rem;
 
-  &:before {
+  &:after {
     @extend %material-icons;
     font-size: 20px;
     content: '\e315';

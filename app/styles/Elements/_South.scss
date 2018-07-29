@@ -1,4 +1,9 @@
 
+.cms-preview .panel {
+  height: 100%;
+}
+
+.cms-preview-controls,
 .cms-content-actions {
   @include shadow;
   @include shadow-darker;
@@ -16,13 +21,6 @@
   z-index: 9;
   //left: 241px;
   //left: 180px;
-}
-
-.toolbar--south:empty {
-  display: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  border: 0 !important;
 }
 
 //
