@@ -47,6 +47,8 @@
     }
   }
 
+  #Form_ItemEditForm_action_doSaveAndNext,
+  #Form_ItemEditForm_action_doSaveAndPrev,
   .btn-outline-primary {
     transition: all 222ms ease !important;
     border-color: $highlight;
@@ -79,3 +81,4 @@
   padding-top: 9px;
   padding-bottom: 8px;
 }
+

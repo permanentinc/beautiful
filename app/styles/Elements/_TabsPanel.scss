@@ -4,7 +4,70 @@
       border: 1px solid $highlight !important;
       box-shadow: 0 .313rem .719rem rgba($text, .1), 0 .156rem .125rem rgba($black, .06);
       background: $white !important;
-      border-radius: .2rem !important;
+      border-radius: .3rem !important;
+      margin-top: -1rem !important;
+
+      &:before {
+        @include pseudo;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 10px 8px 0;
+        border-color: $highlight transparent transparent;
+        top: 100%;
+        left: 1rem;
+      }
+
+      &:after {
+        @include pseudo;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 10px 8px 0;
+        border-color: $white transparent transparent;
+        top: 100%;
+        transform: translateY(-1.5px);
+        left: 1rem;
+      }
     }
+  }
+
+  .nav-link,
+  .cms-panel-link {
+    &.active {
+      color: $highlight;
+      border-color: $highlight !important;
+    }
+  }
+}
+
+.dropdown-menu {
+  border: 1px solid $highlight !important;
+  box-shadow: 0 .313rem .719rem rgba($text, .1), 0 .156rem .125rem rgba($black, .06);
+  background: $white !important;
+  border-radius: .3rem !important;
+  margin-top: 1rem !important;
+
+  &:before {
+    @include pseudo;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 8px 10px;
+    border-color: transparent transparent $highlight transparent;
+    bottom: 100%;
+    right: 1rem;
+  }
+
+  &:after {
+    @include pseudo;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 8px 10px;
+    border-color: transparent transparent $white transparent;
+    bottom: 100%;
+    transform: translateY(1.5px);
+    right: 1rem;
   }
 }
