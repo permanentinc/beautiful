@@ -16,7 +16,7 @@
   }
 
   .bulk-actions,
-  .toolbar--south,
+  .toolbar--south:not(.cms-panel-toggle),
   .cms-preview-controls,
   .cms-content-actions {
     @include shadow;
