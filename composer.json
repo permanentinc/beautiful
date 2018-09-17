@@ -1,8 +1,8 @@
 {
   "name": "permanentinc/beautiful",
-  "description": "",
+  "description": "CMS Theme - based on shards",
   "homepage": "http://github.com/permanentinc/beautiful",
-  "keywords": [],
+  "keywords": ["silverstripe", "theme", "flat", "admin", "pinc","permanentinc", "cms"],
   "license": "BSD-3-Clause",
   "authors": [
     {
@@ -23,7 +23,7 @@
       "dist"
     ],
     "screenshots": [
-      "img/screens/screenshot1.png"
+      "http://permanentinc.me/screenshot1.png"
     ]
   }
 }
