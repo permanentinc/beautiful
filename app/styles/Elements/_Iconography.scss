@@ -277,12 +277,8 @@
 #Menu-SilverStripe-RedirectedURLs-Admin-RedirectedURLAdmin .menu__icon:before {
   @extend %material-icons;
   content: '\e043' !important;
-  top: -10px !important;
+  top: 0 !important;
   position: relative !important;
-}
-
-#Menu-SilverStripe-CampaignAdmin-CampaignAdmin {
-  display: none;
 }
 
 #Menu-MessageAdmin .menu__icon:before {

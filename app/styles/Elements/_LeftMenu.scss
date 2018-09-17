@@ -9,6 +9,10 @@
     border: 0;
   }
 
+  .cms-panel-toggle {
+    width: 100%;
+  }
+
   .cms-menu {
     @include shadow-dark;
     z-index: 111;

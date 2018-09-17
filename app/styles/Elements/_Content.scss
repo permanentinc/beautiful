@@ -12,6 +12,8 @@
   position: relative;
 }
 
+.form--fill-height fieldset,
+.gallery__outer,
 .flexbox-area-grow.fill-height {
 
   &::-webkit-scrollbar-track {
@@ -43,4 +45,24 @@
 
 .cms-content-tools {
   background: $off-white;
+}
+
+#Form_AddForm_PageType {
+  .form__field-description {
+    background: transparent;
+    color: $text;
+    opacity: .8;
+
+    &:before {
+      display: none;
+    }
+  }
+}
+
+.toolbar--content {
+  z-index: 3;
+}
+
+a {
+  color: $highlight;
 }
