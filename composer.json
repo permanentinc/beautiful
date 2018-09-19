@@ -2,7 +2,16 @@
   "name": "permanentinc/beautiful",
   "description": "CMS Theme - based on shards",
   "homepage": "http://github.com/permanentinc/beautiful",
-  "keywords": ["silverstripe", "theme", "flat", "admin", "pinc","permanentinc", "cms"],
+  "keywords": [
+    "silverstripe",
+    "theme",
+    "flat",
+    "admin",
+    "pinc",
+    "permanentinc",
+    "cms"
+  ],
+  "type": "silverstripe-module",
   "license": "BSD-3-Clause",
   "authors": [
     {
