@@ -24,16 +24,19 @@
 
 @mixin regular {
   font-family: 'google_sansregular', san-serif;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: normal;
 }
 
 @mixin medium {
   font-family: 'google_sansmedium', san-serif;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: normal;
 }
 
 @mixin bold {
   font-family: 'google_sansbold', san-serif;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: normal;
 }
 
