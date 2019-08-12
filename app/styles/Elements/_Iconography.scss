@@ -42,7 +42,7 @@
   &:after {
     @extend %material-icons;
     font-size: 16px;
-    content: '\e14d';
+    // content: '\e14d';
   }
 }
 
@@ -67,7 +67,7 @@
   &:after {
     @extend %material-icons;
     font-size: 16px;
-    content: '\e001';
+    // content: '\e001';
   }
 }
 
@@ -95,7 +95,7 @@
   &:after {
     @extend %material-icons;
     font-size: 20px;
-    content: '\e313';
+    // content: '\e313';
     color: $highlight;
     top: 3px;
   }
@@ -108,7 +108,7 @@
   &:after {
     @extend %material-icons;
     font-size: 20px;
-    content: '\e315';
+    // content: '\e315';
     color: $highlight;
     position: relative;
     top: 2px;
@@ -127,7 +127,7 @@
   .sidebarMenu__item__link__icon {
     &:before {
       @extend %material-icons;
-      content: '\e14d';
+      // content: '\e14d';
     }
   }
 

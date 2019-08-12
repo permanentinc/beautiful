@@ -167,7 +167,7 @@
       &:before {
         @extend %material-icons;
         font-size: 24px;
-        content: "\e314";
+        content: '\e314';
         position: absolute;
         transform: translateX(3px);
         left: 0;
@@ -178,7 +178,7 @@
       &:after {
         @extend %material-icons;
         font-size: 24px;
-        content: "\e314";
+        content: '\e314';
         position: absolute;
         transform: translateX(-3px);
         left: 0;
@@ -191,11 +191,11 @@
   .toggle-expand {
     span {
       &:before {
-        content: "\e315";
+        content: '\e315';
       }
 
       &:after {
-        content: "\e315";
+        content: '\e315';
       }
     }
   }
@@ -213,7 +213,7 @@
     &:before {
       @extend %material-icons;
       font-size: 24px;
-      content: "\e8d4";
+      content: '\e8d4';
       position: absolute;
       color: $text;
       right: 0;
@@ -238,5 +238,19 @@
   .sticky-toggle:before {
     top: 26px !important;
     left: 21px !important;
+  }
+}
+
+.cms {
+  .cms-menu {
+    .cms-subsites {
+      padding-top: 1rem;
+      background: $grey-light;
+
+      .chosen-single div b {
+        margin-left: -0.2rem !important;
+        margin-top: 0.2rem !important;
+      }
+    }
   }
 }
