@@ -1,0 +1,49 @@
+//------------------------------------------------------------------
+// Multiclass & Quick blocks
+//------------------------------------------------------------------
+.add-existing-autocompleter {
+  width: 100%;
+  height: 3rem;
+  position: relative;
+}
+
+[data-name='BannerImages'] {
+  .btn-toolbar {
+    width: 100%;
+  
+  }
+}
+
+.chosen-container.chosen-container-single.chosen-container-single-nosearch {
+  width: 340px !important;
+}
+
+.toolbar--content.ss-gridfield-buttonrow.ss-gridfield-buttonrow-before {
+  height: 3.4rem;
+}
+
+.cms .grid-field .add-existing-autocompleter button.action_gridfield_relationadd {
+  padding-bottom: 0.6385rem;
+}
+
+@include media(1040px, max) {
+  .grid-field__table td,
+  .grid-field__table th {
+    display: none;
+  }
+
+  .cms-list .grid-field__table td,
+  .cms-list .grid-field__table th,
+  .grid-field__table td.col-Title,
+  .grid-field__table td.grid-field__action-placeholder,
+  .grid-field__table td.grid-field__cell--actions,
+  .grid-field__table td.grid-field__col-compact,
+  .grid-field__table td:first-child,
+  .grid-field__table th.col-Title,
+  .grid-field__table th.grid-field__action-placeholder,
+  .grid-field__table th.grid-field__cell--actions,
+  .grid-field__table th.grid-field__col-compact,
+  .grid-field__table th:first-child {
+    display: table-cell;
+  }
+}
