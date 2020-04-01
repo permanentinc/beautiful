@@ -62,3 +62,22 @@
     }
   }
 }
+
+#Form_EditForm_Visibility {
+  input {
+    opacity: 1 !important;
+    margin-left: -20px;
+  }
+}
+
+.toolbar--content.ss-gridfield-buttonrow.ss-gridfield-buttonrow-before {
+  padding-top: 4px;
+}
+
+.grid-field__search-holder {
+  margin: 0 !important;
+}
+
+.gallery .gallery__sort .chosen-single {
+  margin-top: 0 !important;
+}
