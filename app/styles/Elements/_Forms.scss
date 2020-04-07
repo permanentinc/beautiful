@@ -4,22 +4,21 @@
 
 .cms {
   .field {
-
     textarea {
       &::-webkit-scrollbar-track {
         background-color: $grey-light;
-        border-radius: 0 .15rem .15rem 0;
+        border-radius: 0 0.15rem 0.15rem 0;
       }
 
       &::-webkit-scrollbar {
         width: 5px;
         background-color: $grey-light;
-        border-radius: 0 .15rem .15rem 0;
+        border-radius: 0 0.15rem 0.15rem 0;
       }
 
       &::-webkit-scrollbar-thumb {
         background-color: $grey-mid;
-        border-radius: 0 .15rem .15rem 0;
+        border-radius: 0 0.15rem 0.15rem 0;
         border: 0;
       }
     }
@@ -41,13 +40,12 @@
 
       &:focus {
         border-color: $highlight;
-        box-shadow: 0 .313rem .719rem rgba($text, .1), 0 .156rem .125rem rgba($black, .06);
+        box-shadow: 0 0.313rem 0.719rem rgba($text, 0.1), 0 0.156rem 0.125rem rgba($black, 0.06);
       }
     }
   }
 
   .form__field {
-
     &-holder {
       flex: 0 0 100% !important;
       width: 100% !important;
@@ -71,23 +69,24 @@
       width: 100% !important;
       max-width: 100% !important;
       flex: 0 0 100% !important;
-      opacity: .6;
+      opacity: 0.6;
     }
 
     &-description {
       background: $grey-light;
-      padding: .3rem .8rem .5rem;
+      padding: 0.3rem 0.8rem 0.5rem;
       color: $text;
-      border-radius: .3rem;
+      border-radius: 0.3rem;
 
       &:before {
-        content: url('data:image/svg+xml; utf8, <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M7.64 15.996c-2.576-.13-4.909-1.454-6.311-3.58a7.975 7.975 0 0 1-1.3-3.688 9.806 9.806 0 0 1 0-1.46 7.972 7.972 0 0 1 1.3-3.689A8.004 8.004 0 0 1 6.756.092C7.199.022 7.502 0 7.999 0c.498 0 .8.022 1.244.092a8.004 8.004 0 0 1 5.427 3.487 7.975 7.975 0 0 1 1.3 3.69 9.806 9.806 0 0 1 0 1.459c-.186 1.875-.957 3.541-2.253 4.867a7.995 7.995 0 0 1-4.974 2.372c-.25.024-.882.04-1.103.03zm1.064-1.812a6.241 6.241 0 0 0 4.257-2.426 6.262 6.262 0 0 0 1.16-2.634c.076-.415.095-.631.095-1.126 0-.495-.018-.711-.095-1.127a6.264 6.264 0 0 0-1.16-2.633 6.571 6.571 0 0 0-1.202-1.202A6.268 6.268 0 0 0 8.688 1.81a8.032 8.032 0 0 0-1.377 0 6.248 6.248 0 0 0-4.51 2.765 6.247 6.247 0 0 0-.99 2.736 8.032 8.032 0 0 0 0 1.376 6.248 6.248 0 0 0 2.765 4.51c.912.597 1.893.927 3.025 1.017.18.014.9-.005 1.102-.03zm-1.58-4.646V7.075h1.75v4.927h-1.75V9.538zm0-4.669v-.875h1.75v1.751h-1.75v-.876z" fill="#3d5070" fill-rule="nonzero"/></svg>');
+        content: '';
+        background-image: url('data:image/svg+xml; utf8, <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M7.64 15.996c-2.576-.13-4.909-1.454-6.311-3.58a7.975 7.975 0 0 1-1.3-3.688 9.806 9.806 0 0 1 0-1.46 7.972 7.972 0 0 1 1.3-3.689A8.004 8.004 0 0 1 6.756.092C7.199.022 7.502 0 7.999 0c.498 0 .8.022 1.244.092a8.004 8.004 0 0 1 5.427 3.487 7.975 7.975 0 0 1 1.3 3.69 9.806 9.806 0 0 1 0 1.459c-.186 1.875-.957 3.541-2.253 4.867a7.995 7.995 0 0 1-4.974 2.372c-.25.024-.882.04-1.103.03zm1.064-1.812a6.241 6.241 0 0 0 4.257-2.426 6.262 6.262 0 0 0 1.16-2.634c.076-.415.095-.631.095-1.126 0-.495-.018-.711-.095-1.127a6.264 6.264 0 0 0-1.16-2.633 6.571 6.571 0 0 0-1.202-1.202A6.268 6.268 0 0 0 8.688 1.81a8.032 8.032 0 0 0-1.377 0 6.248 6.248 0 0 0-4.51 2.765 6.247 6.247 0 0 0-.99 2.736 8.032 8.032 0 0 0 0 1.376 6.248 6.248 0 0 0 2.765 4.51c.912.597 1.893.927 3.025 1.017.18.014.9-.005 1.102-.03zm-1.58-4.646V7.075h1.75v4.927h-1.75V9.538zm0-4.669v-.875h1.75v1.751h-1.75v-.876z" fill="%233d5070" fill-rule="nonzero"/></svg>');
         display: inline-block;
         width: 16px;
         height: 16px;
-        margin-right: .5rem;
+        margin-right: 0.5rem;
         position: relative;
-        top: .3rem;
+        top: 0.3rem;
       }
     }
   }
@@ -98,7 +97,11 @@
 }
 
 .deprecated {
-  .form-control-static, .form__field-holder input.readonly, .form__field-holder p.readonly, .form__field-holder span.readonly, .readonly .form__field-holder > div {
+  .form-control-static,
+  .form__field-holder input.readonly,
+  .form__field-holder p.readonly,
+  .form__field-holder span.readonly,
+  .readonly .form__field-holder > div {
     max-width: 100%;
   }
 
@@ -115,18 +118,15 @@
   }
 
   form {
-
     a {
       color: $highlight;
     }
 
     .tab-pane {
-
       h2 {
         width: 100%;
       }
     }
-
   }
 
   #Form_EditForm_FacebookPage_Holder label:before {
@@ -134,9 +134,9 @@
     display: inline-block;
     width: 16px;
     height: 16px;
-    margin-right: .5rem;
+    margin-right: 0.5rem;
     position: relative;
-    top: .2rem;
+    top: 0.2rem;
   }
 
   #Form_EditForm_LinkedInPage_Holder label:before {
@@ -144,9 +144,9 @@
     display: inline-block;
     width: 16px;
     height: 16px;
-    margin-right: .5rem;
+    margin-right: 0.5rem;
     position: relative;
-    top: .2rem;
+    top: 0.2rem;
   }
 
   #Form_EditForm_YoutubePage_Holder label:before {
@@ -154,9 +154,9 @@
     display: inline-block;
     width: 16px;
     height: 16px;
-    margin-right: .5rem;
+    margin-right: 0.5rem;
     position: relative;
-    top: .2rem;
+    top: 0.2rem;
   }
 
   #Form_EditForm_InstagramPage_Holder label:before {
@@ -164,9 +164,9 @@
     display: inline-block;
     width: 16px;
     height: 16px;
-    margin-right: .5rem;
+    margin-right: 0.5rem;
     position: relative;
-    top: .2rem;
+    top: 0.2rem;
   }
 
   #Form_EditForm_PinterestPage_Holder label:before {
@@ -174,9 +174,9 @@
     display: inline-block;
     width: 16px;
     height: 16px;
-    margin-right: .5rem;
+    margin-right: 0.5rem;
     position: relative;
-    top: .2rem;
+    top: 0.2rem;
   }
 
   #Form_EditForm_TwitterPage_Holder label:before {
@@ -184,9 +184,9 @@
     display: inline-block;
     width: 16px;
     height: 16px;
-    margin-right: .5rem;
+    margin-right: 0.5rem;
     position: relative;
-    top: .2rem;
+    top: 0.2rem;
   }
 
   .gridfield-sortablerows-noselection {
@@ -264,7 +264,7 @@
 
     &:before {
       @include pseudo;
-      top: .1875rem;
+      top: 0.1875rem;
       left: -1.5rem;
       position: absolute;
       display: block;
@@ -296,12 +296,18 @@
     }
 
     &:after {
-      left: .25rem;
+      left: 0.25rem;
       background: $white;
     }
   }
 
-  .chosen-container-multi .chosen-choices li.search-field input[type=text] {
+  .chosen-container-multi .chosen-choices li.search-field input[type='text'] {
     @include regular;
+  }
+}
+
+.cms {
+  .ui-accordion-content {
+    padding: 1rem 1rem 0.5rem!important;
   }
 }

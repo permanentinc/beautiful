@@ -1,0 +1,27 @@
+//------------------------------------------------------------------
+// Blocks System
+//------------------------------------------------------------------
+
+#Root_Blocks {
+  .grid-field__table {
+    .col-IconForCMS {
+      width: 60px;
+    }
+
+    .col-Title {
+      width: 60px;
+    }
+
+    .col-ContentSummary {
+      width: calc(100%- 260px);
+    }
+
+    .grid-field__col-compact {
+      width: 140px;
+    }
+
+    .edit-link {
+      display: none;
+    }
+  }
+}
