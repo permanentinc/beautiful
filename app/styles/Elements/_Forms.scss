@@ -311,6 +311,11 @@
     padding: 1rem 1rem 0.5rem !important;
   }
 }
+
 .pull-xs-right + .btn-toolbar {
   width: 100% !important;
+}
+
+.toolbar--south .chosen-container.chosen-container-single.chosen-container-single-nosearch {
+  width: auto !important;
 }
