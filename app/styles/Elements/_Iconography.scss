@@ -266,6 +266,32 @@
   content: '\e838' !important;
 }
 
+#Menu-Toast-Admin-LocationsAdmin .menu__icon:before {
+  @extend %material-icons;
+  content: '\e0c8' !important;
+}
+
+#Menu-Toast-Admin-MessagesAdmin .menu__icon:before {
+  @extend %material-icons;
+  content: '\e625' !important;
+}
+#Menu-Toast-Admin-SearchAdmin .menu__icon:before {
+  @extend %material-icons;
+  content: '\e8b6' !important;
+}
+#Menu-Toast-Admin-TeamMemberAdmin .menu__icon:before {
+  @extend %material-icons;
+  content: '\e7fd' !important;
+}
+#Menu-Toast-Admin-ResourceAdmin .menu__icon:before {
+  @extend %material-icons;
+  content: '\e14d' !important;
+}
+#Menu-Toast-Admin-CatalogueAdmin .menu__icon:before {
+  @extend %material-icons;
+  content: '\e14d' !important;
+}
+
 #Menu-SilverStripe-RedirectedURLs-Admin-RedirectedURLAdmin .menu__icon {
   text-indent: 0;
 }
