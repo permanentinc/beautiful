@@ -1,4 +1,8 @@
 .cms {
+  .ss-gridfield-orderable .col-reorder .handle .icon{
+    position: relative;
+    left:20px; 
+  }
   .grid-field {
     &__table {
       tr {
