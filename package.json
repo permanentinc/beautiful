@@ -7,7 +7,10 @@
     "url": "https://github.com/toastnz/quicksilver"
   },
   "scripts": {
-    "start": "gulp --silent"
+    "preinstall": "npx npm-force-resolutions"
+  },
+  "resolutions": {
+    "graceful-fs": "^4.2.4"
   },
   "browser": {
     "jquery": "./node_modules/jquery/dist/jquery.js"

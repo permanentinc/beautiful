@@ -29,13 +29,13 @@
 
     &:active,
     &:hover {
-      background-color: darken($highlight, 3%);
-      border-color: darken($highlight, 3%);
+      // background-color: darken($highlight, 3%);
+      // border-color: darken($highlight, 3%);
       box-shadow: 0 5px 15px rgba($black, .05), 0 4px 10px rgba($highlight, .25);
     }
 
     &:active:focus {
-      background-color: darken($highlight, 3%) !important;
+      // background-color: darken($highlight, 3%) !important;
       box-shadow: 0 0 0 0.2rem rgba($highlight, .5) !important;
       color: $white !important;
     }
@@ -56,15 +56,15 @@
 
     &:focus {
       box-shadow: 0 5px 15px rgba($black, .05), 0 4px 10px rgba($highlight, .25);
-      background-color: lighten($highlight, 35%) !important;
-      border-color: darken($highlight, 3%) !important;
+      // background-color: lighten($highlight, 35%) !important;
+      // border-color: darken($highlight, 3%) !important;
       color: $highlight !important;
     }
 
     &:active,
     &:hover {
-      background-color: lighten($highlight, 35%) !important;
-      border-color: darken($highlight, 3%) !important;
+      // background-color: lighten($highlight, 35%) !important;
+      // border-color: darken($highlight, 3%) !important;
       color: $highlight !important;
       box-shadow: 0 5px 15px rgba($black, .05), 0 4px 10px rgba($highlight, .25) !important;
     }

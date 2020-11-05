@@ -14,12 +14,16 @@ $black: #000;
 $red-light: #b75650;
 $highlight: #b7106d;
 $highlight: #e75931;
-$highlight: #4caf50; 
+$highlight: #4caf50;
 $highlight: #8e44ad;
 $highlight: #00b8d9;
 $highlight: #5a6169;
 $highlight: #3f3f40;
-$highlight: #377bff;
 
+:root {
+    --primary-colour: #377bff;
+    --secondary-colour: #0f1b25;
+}
 
-
+$highlight: #377bff !default;
+$highlight: var(--primary-colour);

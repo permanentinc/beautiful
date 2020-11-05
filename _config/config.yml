@@ -4,3 +4,8 @@ Name: permanentinc-beautiful
 SilverStripe\Admin\LeftAndMain:
   extensions:
     - permanentinc\beautiful\Extensions\BeautifulLeftAndMainExtension
+
+
+SilverStripe\SiteConfig\SiteConfig:
+  extensions:
+    - permanentinc\beautiful\Extensions\BeautifulConfigExtension
