@@ -3,6 +3,10 @@
 //------------------------------------------------------------------
 
 .cms .cms-container {
+  #Form_EditForm {
+    height: 100%;
+  }
+  
   .toolbar.toolbar--south.cms-panel-toggle.vertical-align-items {
     background: $white;
     box-shadow: none;
