@@ -7,7 +7,7 @@
   width: calc(100% - 8rem);
   max-width: 80rem;
   overflow: visible;
-  border-radius: .625rem;
+  border-radius: 0.625rem;
   margin: 4rem auto 7rem;
   background: $white !important;
   padding: 2rem 4rem !important;
@@ -51,3 +51,33 @@ div:not(.cms-content-fields) .panel--padded:not(.cms-tree-view-sidebar) {
   border: 0;
 }
 
+#Root_Blocks {
+  .toolbar--content {
+    .pull-xs-right {
+      float: none;
+    }
+  }
+
+  .ss-gridfield-buttonrow-before {
+    order: 2;
+    width: 100%;
+  }
+
+  .ss-gridfield-add-new-multi-class {
+    z-index: 4;
+    order: 1;
+  }
+
+  .grid-field__table {
+    order: 3;
+  }
+
+  #Form_EditForm_ContentBlocks {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+#Form_EditForm_CreativeProfile .action.action-detail.btn.btn-primary.font-icon-plus-circled.new.new-link {
+  top: -2.5rem;
+}
