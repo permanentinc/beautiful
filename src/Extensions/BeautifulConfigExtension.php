@@ -27,7 +27,6 @@ class BeautifulConfigExtension extends DataExtension
 
     public function updateCMSFields(FieldList $fields)
     {
-
         if ((Security::getCurrentUser()->ID == 1) && Permission::check('ADMIN')) {
 
             $fields->findOrMakeTab('Root.Theme', 'Theme');

@@ -21,7 +21,7 @@
   .cms-content-actions {
     @include shadow;
     @include shadow-darker;
-    box-shadow: 0 5px 15px rgba($black, .05), 0 4px 10px rgba($highlight, .25);
+    // box-shadow: 0 5px 15px rgba($black, .05), 0 4px 10px rgba($highlight, .25);
     backface-visibility: hidden;
     position: sticky;
     background: $white;
