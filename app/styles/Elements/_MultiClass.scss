@@ -10,7 +10,6 @@
 [data-name='BannerImages'] {
   .btn-toolbar {
     width: 100%;
-  
   }
 }
 
@@ -31,7 +30,7 @@
   .grid-field__table th {
     display: none;
   }
-
+ 
   .cms-list .grid-field__table td,
   .cms-list .grid-field__table th,
   .grid-field__table td.col-Title,
@@ -46,4 +45,8 @@
   .grid-field__table th:first-child {
     display: table-cell;
   }
+}
+
+  .action_gridfield_relationadd {
+    font-size: 0 !important;
 }
