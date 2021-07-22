@@ -1,9 +1,14 @@
 .cms {
-  .ss-gridfield-orderable .col-reorder .handle .icon{
+  .ss-gridfield-orderable .col-reorder .handle .icon {
     position: relative;
-    left:20px; 
+    left: 20px;
   }
   .grid-field {
+    .btn-toolbar {
+      top: -30px;
+      position: relative;
+    }
+
     &__table {
       tr {
         th {
@@ -26,9 +31,6 @@
           color: $highlight;
         }
       }
-
     }
   }
-
 }
-
