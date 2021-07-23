@@ -15,7 +15,6 @@
 .form--fill-height fieldset,
 .gallery__outer,
 .flexbox-area-grow.fill-height {
-
   &::-webkit-scrollbar-track {
     background-color: $grey-light;
   }
@@ -51,7 +50,7 @@
   .form__field-description {
     background: transparent;
     color: $text;
-    opacity: .8;
+    opacity: 0.8;
 
     &:before {
       display: none;
@@ -65,4 +64,27 @@
 
 a {
   color: $highlight;
+}
+
+#Form_EditForm {
+  height: auto !important;
+
+  fieldset {
+    padding-top: 2rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $grey-light;
+  }
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    background-color: $grey-light;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $grey-mid;
+    border-radius: 0;
+    border: 0;
+  }
 }
