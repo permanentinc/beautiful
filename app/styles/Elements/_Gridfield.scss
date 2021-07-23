@@ -3,7 +3,16 @@
     position: relative;
     left: 20px;
   }
+
   .grid-field {
+    .pull-xs-right + .btn-toolbar {
+      top: 5px;
+    }
+
+    .grid-field__title {
+      padding-top: 2.5rem;
+    }
+
     .btn-toolbar {
       top: -30px;
       position: relative;

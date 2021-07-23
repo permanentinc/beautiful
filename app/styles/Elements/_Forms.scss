@@ -319,3 +319,16 @@
 .toolbar--south .chosen-container.chosen-container-single.chosen-container-single-nosearch {
   width: auto !important;
 }
+
+#Form_editorAnchorLink_TargetBlank,
+#Form_editorInternalLink_TargetBlank,
+#Form_ModalsEditorExternalLink_TargetBlank {
+  margin: 0;
+  margin-top: 0.3rem;
+  left: -2rem;
+  opacity: 1;
+}
+
+.modal-header {
+  background: transparent;
+}
