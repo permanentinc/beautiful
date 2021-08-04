@@ -39,7 +39,7 @@
     height: #{$size * 0.384615385}px;
     width: #{$size * 0.384615385}px;
     top: 2px;
-    left: 17px;
+    left: 2px;
     bottom: 2px;
     background-color: white;
     -webkit-transition: 0.4s;
@@ -58,7 +58,7 @@
       box-shadow: 0 0 1px $highlight;
     }
     &:checked + .slider:before {
-      transform: translateX(-15px);
+      transform: translateX(15px);
     }
   }
 }
