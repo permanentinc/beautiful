@@ -35,12 +35,10 @@ class BeautifulConfigExtension extends DataExtension
                 TextField::create('Highlight', 'Highlight colour hex')
                     ->setDescription('i.e. #FF0000'),
                 UploadField::create('LogoWide', 'CMS Logo - Wide')
-                    ->setFolderName('cms-logos')
                     ->setAllowedExtensions(['svg'])
                     ->setDescription('Upload an SVG at 110px by 26px'),
                 UploadField::create('LogoSquare', 'CMS Logo - Square')
                     ->setAllowedExtensions(['svg'])
-                    ->setFolderName('cms-logos')
                     ->setDescription('Upload an SVG at 26px by 26px'),
                 LiteralField::create('ExternalAPIKeysWarning', '<div class="message warning"><strong>Note:</strong> Only <strong>Default Admin</strong> can view these settings</div>')
             ]);
