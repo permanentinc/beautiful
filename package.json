@@ -42,7 +42,7 @@
     "lodash": "^4.17.4",
     "masonry-layout": "^4.1.1",
     "medium-zoom": "^0.1.5",
-    "moment": "^2.18.1",
+    "moment": "^2.29.2",
     "node-js-marker-clusterer": "^1.0.0",
     "nprogress": "^0.2.0",
     "parsleyjs": "^2.7.0",
