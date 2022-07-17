@@ -1,0 +1,85 @@
+//------------------------------------------------------------------
+// Button styles
+//------------------------------------------------------------------
+
+.cms {
+  .btn {
+    font-size: 1rem;
+  }
+
+  .actions-warning {
+    background: $beautiful-yellow-light;
+    color: $beautiful-text;
+    padding-top: .45rem;
+  }
+
+  .btn-group .btn-primary {
+    border-color: $beautiful-highlight;
+  }
+
+  .ss-ui-action-constructive,
+  .btn-primary {
+    transition: all 222ms ease !important;
+    background: $beautiful-highlight;
+    border-color: $beautiful-highlight;
+    color: white !important;
+
+    &:focus {
+      box-shadow: 0 5px 15px rgba(black, .05), 0 4px 10px rgba($beautiful-highlight, .25);
+    }
+
+    &:active,
+    &:hover {
+      // background-color: darken($beautiful-highlight, 3%);
+      // border-color: darken($beautiful-highlight, 3%);
+      box-shadow: 0 5px 15px rgba(black, .05), 0 4px 10px rgba($beautiful-highlight, .25);
+    }
+
+    &:active:focus {
+      // background-color: darken($beautiful-highlight, 3%) !important;
+      box-shadow: 0 0 0 0.2rem rgba($beautiful-highlight, .5) !important;
+      color: white !important;
+    }
+
+    &.disabled {
+      opacity: 1;
+      background: $beautiful-grey-mid-alt;
+      border-color: $beautiful-grey-mid-alt;
+    }
+  }
+
+  #Form_ItemEditForm_action_doSaveAndNext,
+  #Form_ItemEditForm_action_doSaveAndPrev,
+  .btn-outline-primary {
+    transition: all 222ms ease !important;
+    border-color: $beautiful-highlight;
+    color: $beautiful-highlight;
+
+    &:focus {
+      box-shadow: 0 5px 15px rgba(black, .05), 0 4px 10px rgba($beautiful-highlight, .25);
+      // background-color: lighten($beautiful-highlight, 35%) !important;
+      // border-color: darken($beautiful-highlight, 3%) !important;
+      color: $beautiful-highlight !important;
+    }
+
+    &:active,
+    &:hover {
+      // background-color: lighten($beautiful-highlight, 35%) !important;
+      // border-color: darken($beautiful-highlight, 3%) !important;
+      color: $beautiful-highlight !important;
+      box-shadow: 0 5px 15px rgba(black, .05), 0 4px 10px rgba($beautiful-highlight, .25) !important;
+    }
+  }
+}
+
+.btn__loading-icon {
+  .btn__circle {
+    background: $beautiful-highlight !important;
+  }
+}
+
+.cms-batch-actions .btn {
+  padding-top: 9px;
+  padding-bottom: 8px;
+}
+

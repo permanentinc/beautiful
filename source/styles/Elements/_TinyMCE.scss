@@ -1,0 +1,57 @@
+//------------------------------------------------------------------
+// Tiny MCE
+//------------------------------------------------------------------
+
+.form__field-holder {
+  .mce-container {
+    border-radius: 0.3rem;
+  }
+
+  .mce-toolbar-grp {
+    border-radius: 0.3rem 0.3rem 0 0;
+    background: white;
+  }
+
+  .mce-ico {
+    font-family: 'tinymce', Arial, sans-serif !important;
+    color: $beautiful-text !important;
+
+    &:hover {
+      color: $beautiful-highlight !important;
+    }
+  }
+
+  .mce-active .mce-ico {
+    color: $beautiful-highlight !important;
+  }
+
+  .mce-btn {
+    background: white !important;
+    border: 0 !important;
+  }
+}
+
+.mce-ico {
+  font-family: 'tinymce', Arial, sans-serif !important;
+  color: $beautiful-text !important;
+
+  &:hover {
+    color: $beautiful-highlight !important;
+  }
+}
+
+.mce-btn-group:not(:first-child) {
+  border-radius: 0 !important;
+}
+
+.mce-primary {
+  background: $beautiful-highlight !important;
+  border-radius: 0.3rem;
+  border-color: $beautiful-highlight;
+  color: white !important;
+}
+
+.mce-statusbar {
+  border-radius: 0 0 0.3rem 0.3rem !important;
+  background: $beautiful-off-white !important;
+}

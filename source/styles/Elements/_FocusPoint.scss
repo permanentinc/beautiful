@@ -1,0 +1,8 @@
+.focuspoint-picker__overlay {
+  border: 1px solid $beautiful-highlight;
+  box-shadow: none;
+}
+
+.focuspoint-picker__gradient {
+  background: radial-gradient(circle 80px at center center, rgba($beautiful-highlight, 0) 33%, rgba($beautiful-highlight, .5));
+}

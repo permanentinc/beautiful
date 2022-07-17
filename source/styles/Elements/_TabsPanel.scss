@@ -1,0 +1,73 @@
+.cms .cms-container {
+  .ss-ui-action-tabset {
+    .ui-tabs-panel {
+      border: 1px solid $beautiful-highlight !important;
+      box-shadow: 0 .313rem .719rem rgba($beautiful-text, .1), 0 .156rem .125rem rgba(black, .06);
+      background: white !important;
+      border-radius: .3rem !important;
+      margin-top: -1rem !important;
+
+      &:before {
+        @include pseudo;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 10px 8px 0;
+        border-color: $beautiful-highlight transparent transparent;
+        top: 100%;
+        left: 1rem;
+      }
+
+      &:after {
+        @include pseudo;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 10px 8px 0;
+        border-color: white transparent transparent;
+        top: 100%;
+        transform: translateY(-1.5px);
+        left: 1rem;
+      }
+    }
+  }
+
+  .nav-link,
+  .cms-panel-link {
+    &.active {
+      color: $beautiful-highlight;
+      border-color: $beautiful-highlight !important;
+    }
+  }
+}
+
+.dropdown-menu {
+  border: 1px solid $beautiful-highlight !important;
+  box-shadow: 0 .313rem .719rem rgba($beautiful-text, .1), 0 .156rem .125rem rgba(black, .06);
+  background: white !important;
+  border-radius: .3rem !important;
+  margin-top: 1rem !important;
+
+  &:before {
+    @include pseudo;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 8px 10px;
+    border-color: transparent transparent $beautiful-highlight transparent;
+    bottom: 100%;
+    right: 1rem;
+  }
+
+  &:after {
+    @include pseudo;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 8px 10px;
+    border-color: transparent transparent white transparent;
+    bottom: 100%;
+    transform: translateY(1.5px);
+    right: 1rem;
+  }
+}

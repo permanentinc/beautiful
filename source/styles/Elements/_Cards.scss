@@ -1,0 +1,83 @@
+//------------------------------------------------------------------
+// Floating Cards
+//------------------------------------------------------------------
+
+%panel {
+  @include shadow;
+  width: calc(100% - 8rem);
+  max-width: 80rem;
+  overflow: visible;
+  border-radius: 0.625rem;
+  margin: 4rem auto 7rem;
+  background: white !important;
+  padding: 2rem 4rem !important;
+  flex-grow: auto;
+
+  .form {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+.modal-content {
+  @extend %panel;
+  padding: 0 2rem !important;
+}
+
+.ui-widget-content.cms-panel-padded {
+  @extend %panel;
+  padding: 2rem 0 !important;
+}
+
+div:not(.cms-content-fields) .panel--padded:not(.cms-tree-view-sidebar) {
+  @extend %panel;
+}
+
+.cms .cms-content {
+  background: $beautiful-off-white !important;
+}
+
+.toolbar--content {
+  margin: 0;
+  padding: 0;
+}
+
+.cms .cms-panel-padded .cms-content-view {
+  padding-top: 0;
+  height: 100%;
+}
+
+.cms-content-filters {
+  border: 0;
+}
+
+#Root_Blocks {
+  .toolbar--content {
+    .pull-xs-right {
+      float: none;
+    }
+  }
+
+  .ss-gridfield-buttonrow-before {
+    order: 2;
+    width: 100%;
+  }
+
+  .ss-gridfield-add-new-multi-class {
+    z-index: 4;
+    order: 1;
+  }
+
+  .grid-field__table {
+    order: 3;
+  }
+
+  #Form_EditForm_ContentBlocks {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+#Form_EditForm_CreativeProfile .action.action-detail.btn.btn-primary.font-icon-plus-circled.new.new-link {
+  top: -2.5rem;
+}

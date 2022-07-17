@@ -1,0 +1,18 @@
+$beautiful-off-white: #fbfbfb;
+$beautiful-grey-light: #e1e5eb;
+$beautiful-grey-mid: #b3bdcc;
+$beautiful-grey-mid-alt: #c1cad9;
+$beautiful-grey-dark: #5a6168;
+$beautiful-grey-darker: #252525;
+$beautiful-text: #3d5070;
+$beautiful-yellow-light: #ffd571;
+$beautiful-green-light: #eaf6e4;
+$beautiful-red-light: #b75650;
+
+:root {
+    --primary-colour: #377bff;
+    --secondary-colour: #0f1b25;
+}
+
+$beautiful-highlight: #377bff !default;
+$beautiful-highlight: var(--primary-colour);

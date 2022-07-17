@@ -1,0 +1,51 @@
+//------------------------------------------------------------------
+// Files / Assets
+//------------------------------------------------------------------
+
+.cms {
+  .gallery__main {
+    height: auto !important;
+  }
+
+  .gallery-item--highlighted,
+  .gallery-item--selected {
+    border-color: $beautiful-highlight;
+  }
+
+  .gallery-item--modified,
+  .gallery-item--draft {
+    @include shadow-north;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: auto;
+    height: 1.4rem;
+    background: $beautiful-grey-light;
+    border: 0;
+    border-radius: .1rem;
+
+    &:after {
+      display: none !important;
+    }
+
+    &:before {
+      @include pseudo;
+      @include regular;
+      content: 'Draft';
+      position: relative;
+      color: $beautiful-text;
+      font-size: .8rem;
+      padding: .15rem .5rem .2rem;
+      border: 0;
+    }
+  }
+
+  .gallery-item--modified:before {
+    content: 'Modified';
+  }
+
+  .gallery-item--selected .gallery-item__checkbox-label:before {
+    border-color: $beautiful-highlight;
+    background-color: $beautiful-highlight;
+  }
+}

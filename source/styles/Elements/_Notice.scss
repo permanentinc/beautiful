@@ -1,0 +1,24 @@
+.notice-wrap {
+  //top: auto;
+  //bottom: .7rem;
+  top: 6rem;
+
+  .notice-item {
+    border-color: $beautiful-highlight !important;
+    color: $beautiful-highlight !important;
+    border: 1px solid $beautiful-highlight !important; 
+    box-shadow: 0 5px 15px rgba(black, .05), 0 4px 10px rgba($beautiful-highlight, .25);
+    min-height: 51px;
+
+    &.error {
+      border-color: darken($beautiful-red-light, 3%) !important;
+      border: 1px solid darken($beautiful-red-light, 3%) !important;
+      box-shadow: 0 5px 15px rgba(black, .05), 0 4px 10px rgba($beautiful-red-light, .25);
+      color: $beautiful-red-light !important;
+    }
+
+    .notice-item-close {
+      top: 2px;
+    }
+  }
+}
