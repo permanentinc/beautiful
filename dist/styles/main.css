@@ -778,6 +778,26 @@ a {
   .cms .grid-field__sort.ss-gridfield-sorted-asc:after, .cms .grid-field__sort.ss-gridfield-sorted-desc:after {
     color: var(--primary-colour); }
 
+body .imageoptionsetfield-image {
+  cursor: pointer; }
+
+body .imageoptionset {
+  margin: 0; }
+  body .imageoptionset li:first-of-type {
+    margin-left: 5px; }
+  body .imageoptionset .form__field-label {
+    font-size: 13px;
+    font-weight: 500; }
+
+body .imageoptionsetfield-image > div {
+  outline: 2px solid #ced5e1; }
+
+body .imageoptionset li input:checked + label .imageoptionsetfield-image > div {
+  outline: 2px solid #2b80ff; }
+
+body .imageoptionsetfield-title {
+  display: none; }
+
 body ul.field.IconField {
   background: #b3bdcc;
   border: 0 !important;

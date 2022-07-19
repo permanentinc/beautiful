@@ -3,6 +3,34 @@
 //------------------------------------------------------------------
 
 body {
+  .imageoptionsetfield-image {
+    cursor: pointer;
+  }
+
+  .imageoptionset {
+    margin: 0;
+
+    li {
+      &:first-of-type {
+        margin-left: 5px;
+      }
+    }
+
+    .form__field-label {
+      font-size: 13px;
+      font-weight: 500;
+    }
+  }
+  .imageoptionsetfield-image > div {
+    outline: 2px solid #ced5e1;
+  }
+  .imageoptionset li input:checked + label .imageoptionsetfield-image > div {
+    outline: 2px solid #2b80ff;
+  }
+
+  .imageoptionsetfield-title {
+    display: none;
+  }
   ul.field.IconField {
     @include clearfix;
     background: $beautiful-grey-mid;
