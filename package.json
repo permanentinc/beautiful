@@ -27,7 +27,7 @@
   "dependencies": {
     "alertify.js": "^1.0.12",
     "aos": "2.2.0",
-    "chart.js": "^2.7.2",
+    "chart.js": "^2.9.4",
     "classie": "^1.0.0",
     "combokeys": "^2.4.6",
     "fancybox": "^3.0.0",
