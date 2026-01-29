@@ -3,17 +3,18 @@
 namespace permanentinc\beautiful\extensions;
 
 use SilverStripe\Assets\File;
+use SilverStripe\Core\Extension;
 use SilverStripe\Forms\FieldList;
+use SilverStripe\Forms\TextField;
 use SilverStripe\ORM\DataExtension;
+use SilverStripe\Security\Security;
+use SilverStripe\Forms\LiteralField;
+use SilverStripe\Security\Permission;
 use SilverStripe\Versioned\Versioned;
 use SilverStripe\AssetAdmin\Forms\UploadField;
-use SilverStripe\Forms\TextField;
-use SilverStripe\Forms\LiteralField;
-use SilverStripe\Security\Security;
-use SilverStripe\Security\Permission;
 
 
-class BeautifulConfigExtension extends DataExtension
+class BeautifulConfigExtension extends Extension
 {
 
     private static $db = [
