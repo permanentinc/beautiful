@@ -5,15 +5,11 @@ namespace permanentinc\beautiful\extensions;
 use SilverStripe\Assets\File;
 use SilverStripe\Core\Extension;
 use SilverStripe\Forms\FieldList;
-<<<<<<< HEAD
 use SilverStripe\Forms\TextField;
 use SilverStripe\ORM\DataExtension;
 use SilverStripe\Security\Security;
 use SilverStripe\Forms\LiteralField;
 use SilverStripe\Security\Permission;
-=======
-use SilverStripe\Core\Extension;
->>>>>>> 19811e4f257d25e5850b1d27de9caa1a99355846
 use SilverStripe\Versioned\Versioned;
 use SilverStripe\AssetAdmin\Forms\UploadField;
 
