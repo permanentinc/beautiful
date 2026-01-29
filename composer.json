@@ -23,8 +23,8 @@
     "issues": "http://github.com/permanentinc/beautiful/issues"
   },
   "require": {
-    "silverstripe/cms": "^5",
-    "silverstripe/framework": "^5"
+    "silverstripe/cms": "^5 || ^6",
+    "silverstripe/framework": "^5 || ^6"
   },
   "extra": {
     "installer-name": "beautiful",
